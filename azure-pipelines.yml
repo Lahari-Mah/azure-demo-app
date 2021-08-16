@@ -39,13 +39,13 @@ steps:
      New-Item -Type Directory -Force "${HOME}/.m2"
 #     Copy-Item -Force "$(settings.xml.secureFilePath)" "${HOME}/.m2/settings.xml"
 
-- task: JavaToolInstaller@3
+- task: JavaToolInstaller@0
   inputs:
     versionSpec: '8'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
 
-- task: Maven@4
+- task: Maven@3
   inputs:
    mavenPomFile: 'pom.xml'
    mavenOptions: '-Xmx3072m'
