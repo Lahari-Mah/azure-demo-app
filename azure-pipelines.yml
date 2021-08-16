@@ -47,7 +47,7 @@ steps:
    jdkArchitectureOption: 'x64'
    mavenAuthenticateFeed: true
    publishJUnitResults: false
-   jdkUserInputPath: 'JAVA_HOME'
+   jdkUserInputPath: '${HOME}'
    javaHomeOption: 'JDK Version'
    mavenVersionOption: 'Default'
    effectivePomSkip: true
