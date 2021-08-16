@@ -45,6 +45,7 @@ steps:
    publishJUnitResults: false
    javaHomeOption: 'JDK Version'
    mavenVersionOption: 'Default'
+   jdkUserInputPath: '/Users/rm/Desktop/NjcLabs/JavaPath'
    effectivePomSkip: true
    sonarQubeRunAnalysis: false
    goals: 'clean install package deploy $(MAVEN_OPTS) -DmuleDeploy -Dserver=$(server) -Denvironment= $(environment) -Dworkers = $(workers) -DworkerType = $(workerType) -Dapp.runtime = $(app.runtime) -Dapp.name = $(app.name)'
