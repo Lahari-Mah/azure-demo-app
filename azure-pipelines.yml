@@ -25,6 +25,7 @@ steps:
    key: $(Build.SourcesDirectory)/pom.xml
    path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repositories
+  securityNamespace: cache
 
 - task: PowerShell@2
   inputs: 
